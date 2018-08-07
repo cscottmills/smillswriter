@@ -1,0 +1,184 @@
+// Base mixins
+// -----------
+
+// Media queries
+// --------------------------------------------------------
+// Respond to viewport size
+// $size -> viewport size
+// $operator -> 'min' or 'max'
+// $aspect -> 'width' or 'height'
+// --------------------------
+@mixin respond($size, $operator: max, $aspect: width) {
+  @media (#{$operator}-#{$aspect}: baseEm($size)) {
+    @content;
+  }
+}
+
+@mixin respond-range($upper, $lower) {
+  @media (min-width: baseEm($lower)) and (max-width: baseEm($upper)) {
+    @content;
+  }
+}
+
+// Utilities
+// --------------------------------------------------------
+// Full bleed
+// $direction accepts 'up', 'down' or 'none';
+// NB using 'up' or 'down' causes the shadow to 
+// extend to the top or bottom of the viewport
+// Only use 'none' on relatively wide elements,
+// and set $width to the width of the element 
+// --------------------------
+@mixin full-bleed($color, $direction: none, $width: 400em) {
+  @if $color == 'none' {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  @else {
+    @if $direction == none {
+      box-shadow: -$width 0 0 0 $color, $width 0 0 0 $color, (-$width * 2) 0 0 0 $color, ($width * 2) 0 0 0 $color;
+    }
+
+    @if $direction == down {
+      box-shadow: 0 $width 0 $width $color;
+    }
+
+    @if $direction == up {
+      box-shadow: 0 (-$width) 0 $width $color;
+    }
+    background-color: $color;
+  }
+}
+
+// Placeholder text
+// --------------------------
+@mixin placeholder($color, $style: normal) {
+  &:placeholder {
+    color: $color;
+    font-style: $style;
+
+    @content;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+// Block
+// --------------------------
+@mixin block($width, $context: $emBase) {
+  width: 100%;
+  max-width: em($width, $context);
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Components
+// --------------------------------------------------------
+// Tripundra
+// ------
+// ------
+// ------
+// $alignment accepts 'none', 'left' or 'right'
+// --------------------------
+@mixin tripundra($color, $weight, $width, $height, $alignment: none, $secondWidth: 100%, $thirdWidth: 100%) {
+  // Reset default <button> styles
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-indent: -400em;
+  // Apply the sacred ash
+  display: block;
+  width: $width;
+  height: $height;
+  border-top: $weight solid $color;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    height: $weight;
+    background-color: $color;
+    position: absolute;
+  }
+
+  &:before {
+    bottom: 0;
+  }
+
+  &:after {
+    bottom: 50%;
+  }
+
+  @if $alignment == 'none' {
+    &:before,
+    &:after {
+      width: 100%;
+    }
+  }
+  @else {
+    &:before,
+    &:after {
+      #{$alignment}: 0;
+    }
+
+    &:before {
+      width: $thirdWidth;
+    }
+
+    &:after {
+      width: $secondWidth;
+    }
+  }
+}
+
+// Triangle
+// --------------------------
+@mixin triangle($color, $direction, $width, $height) {
+  @if $direction == 'up' or $direction == 'down' {
+    border-right: ($width / 2) solid transparent;
+    border-left: ($width / 2) solid transparent;
+
+    @if $direction == 'up' {
+      border-bottom: $height solid $color;
+    }
+
+    @if $direction == 'down' {
+      border-top: $height solid $color;
+    }
+  }
+  @else {
+    border-top: ($height / 2) solid transparent;
+    border-bottom: ($height / 2) solid transparent;
+
+    @if $direction == 'right' {
+      border-left: $width solid $color;
+    }
+
+    @if $direction == 'left' {
+      border-right: $width solid $color;
+    }
+  }
+}
+
+// Grid item
+// --------------------------
+@mixin grid-item($count, $space, $wrap: false) {
+  $count-1: ($count - 1);
+  width: calc((100% / #{$count}) - (#{$space} / #{$count}) * #{$count-1});
+
+  @if $wrap != false {
+    &:nth-child(#{$count}n+1):nth-last-child(-n+#{$count-1}) ~ & {
+      margin-left: $space;
+    }
+
+    @for $i from 1 through ($count - 2) {
+      $index: ($count - $i);
+
+      &:nth-child(#{$count}n+#{$index}):last-child {
+        margin-right: auto;
+      }
+    }
+  }
+}

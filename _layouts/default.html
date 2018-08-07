@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <meta name="description" content="The personal website of {{ site.author.name }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <meta content="{{ site.title }}" property="og:site_name">
+  <meta content="{{ site.url }}{{ page.url | remove: '/index.html' }}" property="og:url">
+  {% if page.title %}<meta content="{{ page.title }}" property="og:title">{% endif %}
+  {% if page.abstract %}<meta content="{{ page.abstract }}" property="og:description">
+  <meta content="article" property="og:type">
+  <meta content="{{ page.date | date: '%F' }}" property="article:published_time">
+  <meta content="{{ site.author.name }}" property="og:author">
+  {% else %}<meta content="website" property="og:type">{% endif %}
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="/resources/css/styles.css">
+  {% if page.code == true %}<link rel="stylesheet" href="/resources/css/code.css">{% endif %}
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-header--heading"><a href="/">{{ site.title }}</a></h1>
+      <nav class="page-header--nav">
+        {% assign navLinks = "books links contact" | split: ' ' %}
+        {% capture branch %}{{ page.url }}{% endcapture %}
+        <a {% if branch == '/' %}class="active"{% endif %} href="/">Bio</a>{% for link in navLinks %}<a {% if branch contains link %}class="active"{% endif %} href="/{{ link }}">{{ link | capitalize }}</a>{% endfor %}
+      </nav>
+    </header>
+    <main class="page-content">
+      {{ content }}
+    </main>
+    <footer class="page-footer">
+      <nav class="page-footer--nav">
+        <a {% if branch == '/' %}class="active"{% endif %} href="/">Bio</a>{% for link in navLinks %}<a {% if branch contains link %}class="active"{% endif %} href="/{{ link }}">{{ link | capitalize }}</a></li>{% endfor %}
+      </nav>
+      <p>&copy; 2018 Stephanie Mills</p>
+    </footer>
+  </div>
+</body>
+</html>

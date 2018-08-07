@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% if content.size > 1 %}
+<article class="crux">
+  <div class="crux--text copy{% if page.variant == 'list' %} garland{% endif %}">
+    {{ content }}
+  </div>
+  {% if page.images.size > 0 %}
+    <div class="crux--images">
+      {% for image in page.images %}
+        <img src="{{ image.url }}" alt="{{ image.alt }}">
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>
+{% endif %}
+{% if page.variant == 'grid' %}
+  <ul class="lectern">
+    {% for book in site.data.books %}
+      <li class="lectern--item">
+        <img src="{{ book.cover }}" class="lectern--image">
+        <h3 class="lectern--heading">{{ book.title }} ({{ book.year }})</h3>
+        <p class="lectern--text">{{ book.details }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

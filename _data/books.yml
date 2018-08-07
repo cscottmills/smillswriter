@@ -1,0 +1,11 @@
+- title: Book one
+  details: >
+    Sed ultricies convallis metus, eu pretium est egestas sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim, mi sed blandit volutpat, mauris mi interdum sem, dictum ultrices ligula nisi ut felis. In iaculis magna non dui mollis vestibulum. Vestibulum ac lobortis ante, vitae tincidunt tellus. Donec quis sem varius, mattis turpis vel, malesuada arcu.
+  year: 2018
+  cover: https://placeimg.com/400/600/nature
+
+- title: Book two
+  details: >
+    Sed ultricies convallis metus, eu pretium est egestas sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim, mi sed blandit volutpat, mauris mi interdum sem, dictum ultrices ligula nisi ut felis. In iaculis magna non dui mollis vestibulum. Vestibulum ac lobortis ante, vitae tincidunt tellus. Donec quis sem varius, mattis turpis vel, malesuada arcu.
+  year: 2018
+  cover: https://placeimg.com/402/602/nature

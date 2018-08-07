@@ -1,0 +1,111 @@
+// Base
+// ----
+
+// Apply a natural box layout model to everything
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Global
+// --------------------------------------------------------
+html,
+body,
+button,
+textarea,
+input {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  // Set base font-family here
+  font-family: $fontBody;
+  font-size: (($emBase / 16) * 1em);
+  font-weight: normal;
+  line-height: $baseLineHeight;
+  // color: $something;
+}
+
+// Typography
+// --------------------------------------------------------
+// Block-level elements
+// --------------------------
+%proto-heading {
+  margin: 0;
+}
+
+h1 {
+  @extend %proto-heading;
+}
+
+h2 {
+  @extend %proto-heading;
+}
+
+h3 {
+  @extend %proto-heading;
+}
+
+h4 {
+  @extend %proto-heading;
+}
+
+h5 {
+  @extend %proto-heading;
+}
+
+h6 {
+  @extend %proto-heading;
+}
+
+p {
+  margin: 0 0 $verticalSpace;
+}
+
+ul,
+ol {
+  margin: 0 0 $verticalSpace;
+  nav & {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+hr {
+  // display: block;
+  // border: 0;
+  // border-top: 1px solid $black;
+  // margin: 0;
+  // padding: 0;
+}
+
+input,
+textarea,
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+// Inline elements
+// --------------------------
+a {
+  text-decoration: none;
+  color: inherit;
+} 
+
+small {
+  font-size: 1em;
+}

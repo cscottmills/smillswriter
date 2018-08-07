@@ -1,0 +1,22 @@
+// Functions
+// ---------
+
+@function em($px, $context: $emBase) {
+  @return (($px / $context) * 1em);
+}
+
+@function rem($px) {
+  @return (($px / 16) * 1rem);
+}
+
+@function baseEm($px, $context: 16) {
+  @return (($px / $context) * 1em);
+}
+
+@function deify($source) {
+	@return ceil($source / 1.618);
+}
+
+@function ls($tracking) {
+	@return (($tracking * 0.001) * 1em);
+}

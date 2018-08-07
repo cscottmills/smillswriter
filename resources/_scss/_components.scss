@@ -1,0 +1,141 @@
+// Components
+// ----------
+
+// Global
+// --------------------------------------------------------
+:root {
+  --space: 2.25rem;
+}
+
+.container {
+  padding: 0 rem(36);
+
+  @supports (--something: 1em) {
+    padding: 0 var(--space);
+  }
+}
+
+// Page header
+// --------------------------
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: em(60) 0 em(96);
+}
+
+.page-header--heading {
+
+}
+
+.page-header--nav {
+  a {
+
+  }
+
+  a + a {
+    margin-left: em(18);
+  }
+}
+
+// Page footer
+// --------------------------
+.page-footer {
+  p {
+
+  }
+}
+
+.page-footer--nav {
+  a {
+
+  }
+
+  a + a {
+    
+  }
+}
+
+// Page content
+// --------------------------------------------------------
+.page-content {
+
+}
+
+// Crux
+// --------------------------
+.crux {
+  display: flex;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: 1fr 34%;
+    grid-column-gap: rem(36);
+
+    @supports (--something: 1em) {
+      grid-column-gap: calc(var(--space) / 0.618);
+    }
+  }
+}
+
+.crux--text {
+
+}
+
+.crux--images {
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  img + img {
+    padding-top: rem(36 / 1.618);
+
+    @supports (--something: 1em) {
+      padding-top: calc(var(--space) / 1.618);
+    }
+  }
+}
+
+// Lectern
+// --------------------------
+.lectern {
+
+}
+
+.lectern--item {
+
+}
+
+.lectern--heading {
+
+}
+
+.lectern--text {
+
+}
+
+// Contexts
+// --------------------------
+.copy {
+  // text-align: justify;
+  // hyphens: auto;
+
+  a {
+    color: $teal;
+    transition: $duration box-shadow ease-out; 
+    box-shadow: 0 em($lineThickness * -1) 0 0 transparent inset;
+    &:hover {
+      box-shadow: 0 em($lineThickness * -1) 0 0 transparentize($teal, 0.7) inset;
+    }
+    &:focus {
+      outline-color: $teal;
+    }
+  }
+}
+
+.garland {
+  ul {
+
+  }
+}

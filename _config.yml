@@ -1,0 +1,14 @@
+title: Stephanie Mills
+author:
+  name: Stephanie Mills
+url: http://smillswriter.com
+imagePath: /resources/images
+permalink: /:title/
+exclude: [vendor, Gemfile, Gemfile.lock]
+timezone: America/Detroit
+markdown: kramdown
+kramdown:
+  auto_ids: false
+sass:
+  sass_dir: resources/_scss
+  style: :compressed

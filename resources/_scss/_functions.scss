@@ -1,10 +1,6 @@
 // Functions
 // ---------
 
-@function em($px, $context: $emBase) {
-  @return (($px / $context) * 1em);
-}
-
 @function rem($px) {
   @return (($px / 16) * 1rem);
 }

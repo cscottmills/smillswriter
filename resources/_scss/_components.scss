@@ -4,11 +4,21 @@
 // Global
 // --------------------------------------------------------
 :root {
-  --space: 2.25rem;
+  --space: 1.125rem;
+
+  @include respond($onega) {
+    --space: 1.75rem;
+  }
+
+  @include respond($ladoga) {
+    --space: 2.25rem;
+  }
 }
 
 .container {
+  max-width: rem(1400);
   padding: 0 rem(36);
+  margin: 0 auto;
 
   @supports (--something: 1em) {
     padding: 0 var(--space);
@@ -18,42 +28,49 @@
 // Page header
 // --------------------------
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: em(60) 0 em(96);
+  font-family: $fontSans;
+  letter-spacing: ls(20);
+  // TODO adjust
+  padding: rem(60) 0 rem(96);
+
+  @include respond($vostok) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-header--heading {
 
 }
 
+  // TODO hover styles
 .page-header--nav {
-  a {
-
-  }
-
-  a + a {
-    margin-left: em(18);
-  }
+  @include nav;
+  @include sans;
 }
 
 // Page footer
 // --------------------------
 .page-footer {
-  p {
+  @include sans;
+  @include full-bleed(transparentize($grayDark, 0.96), down);
+  color: transparentize($grayDark, 0.4);
+  // TODO adjust
+  padding: rem(18) 0 rem(36);
 
+  p {
+    margin-bottom: 0;
+  }
+
+  @include respond($vostok) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .page-footer--nav {
-  a {
-
-  }
-
-  a + a {
-    
-  }
+  @include nav;
 }
 
 // Page content
@@ -65,15 +82,18 @@
 // Crux
 // --------------------------
 .crux {
-  display: flex;
+  @include respond($ladoga) {
+    display: flex;
 
-  @supports (display: grid) {
-    display: grid;
-    grid-template-columns: 1fr 34%;
-    grid-column-gap: rem(36);
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: 1fr 34%;
+      grid-column-gap: rem(36);
 
-    @supports (--something: 1em) {
-      grid-column-gap: calc(var(--space) / 0.618);
+      @supports (--something: 1em) {
+        // grid-column-gap: calc(var(--space) / 0.618);
+        grid-column-gap: var(--space);
+      }
     }
   }
 }
@@ -124,9 +144,9 @@
   a {
     color: $teal;
     transition: $duration box-shadow ease-out; 
-    box-shadow: 0 em($lineThickness * -1) 0 0 transparent inset;
+    box-shadow: 0 rem($lineThickness * -1) 0 0 transparent inset;
     &:hover {
-      box-shadow: 0 em($lineThickness * -1) 0 0 transparentize($teal, 0.7) inset;
+      box-shadow: 0 rem($lineThickness * -1) 0 0 transparentize($teal, 0.7) inset;
     }
     &:focus {
       outline-color: $teal;

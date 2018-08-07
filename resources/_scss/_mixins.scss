@@ -1,2 +1,35 @@
 // Project specific mixins
 // -----------------------
+
+// Sans
+// --------------------------
+@mixin sans {
+  font-family: $fontSans;
+  letter-spacing: ls(20);
+
+  @include respond($vostok) {
+    font-size: 0.95em;
+  }
+}
+
+// Nav
+// --------------------------
+@mixin nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    color: transparentize($grayDark, 0.4);
+    margin-right: 1em;
+  }
+
+  @include respond($vostok) {
+    a {
+      margin-right: 0;
+    }
+
+    a + a {
+      margin-left: 1em;
+    } 
+  }
+}

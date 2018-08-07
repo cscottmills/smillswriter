@@ -3,14 +3,20 @@
 
 // Colors
 // --------------------------------------------------------
+$offWhite: #fffdfa;
+$grayDark: #181817;
+
 $teal: #49a3a4;
 
 // Typography
 // --------------------------------------------------------
-$emBase: 18;
+// $fontSerif: 'Cardo', serif;
+// $fontSerif: 'Libre Baskerville', serif;
+$fontSerif: 'Source Serif Pro', serif;
 
-$fontHead: helvetica, sans-serif;
-$fontBody: georgia, serif;
+// $fontSans: 'Amiko', sans-serif;
+$fontSans: 'Fira Sans', sans-serif;
+// $fontSans: 'Source Sans Pro', sans-serif;
 
 // Measurements
 // --------------------------------------------------------
@@ -26,7 +32,7 @@ $timing: ease;
 // Responsive breakpoints
 // https://en.wikipedia.org/wiki/List_of_lakes_by_area
 // --------------------------------------------------------
-// $superior: ;
+$superior: 1300;
 // $victoria: ;
 // $huron: ;
 // $michigan: ;
@@ -36,6 +42,6 @@ $timing: ease;
 // $winnipeg: ;
 // $ontario: ;
 // $balkhash: ;
-// $ladoga: ;
-// $vostok: ;
-// $onega: ;
+$ladoga: 840;
+$vostok: 660;
+$onega: 520;

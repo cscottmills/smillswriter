@@ -25,12 +25,24 @@ html {
 }
 
 body {
-  // Set base font-family here
-  font-family: $fontBody;
-  font-size: (($emBase / 16) * 1em);
+  font-family: $fontSerif;
+  font-size: 1em;
   font-weight: normal;
   line-height: $baseLineHeight;
-  // color: $something;
+  color: $grayDark;
+  background-color: $offWhite;
+
+  @include respond($onega) {
+    font-size: 1.125em;
+  }
+
+  @include respond($vostok) {
+    font-size: 1.25em;
+  }
+
+  @include respond($superior) {
+    font-size: 1.375em;
+  }
 }
 
 // Typography

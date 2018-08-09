@@ -4,20 +4,16 @@
 // Global
 // --------------------------------------------------------
 :root {
-  --space: 1.125rem;
+  --space: 5.625vw;
 
-  @include respond($onega) {
-    --space: 1.75rem;
-  }
-
-  @include respond($ladoga) {
-    --space: 2.25rem;
+  @include respond($malawi) {
+    --space: 3.938rem;
   }
 }
 
 .container {
-  max-width: rem(1400);
-  padding: 0 rem(36);
+  max-width: rem($michigan);
+  padding: 0 5.625vw;
   margin: 0 auto;
 
   @supports (--something: 1em) {
@@ -28,20 +24,48 @@
 // Page header
 // --------------------------
 .page-header {
-  font-family: $fontSans;
-  letter-spacing: ls(20);
-  // TODO adjust
-  padding: rem(60) 0 rem(96);
+  padding: rem(48) 0 rem(56);
+
+  &:after {
+    content: "";
+    display: block;
+    // width: 100%;
+    border-top: rem(2) solid transparentize($grayDark, 0.92);
+    // (100% - 61.8%) / 2
+    margin: rem(48) 19.1% 0;
+  }
 
   @include respond($vostok) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    &:after {
+      width: 100%;
+    }
+  }
+
+  @include respond($ladoga) {
+    padding-bottom: rem(68);
+  }
+
+  @include respond($ontario) {
+    padding: rem(56) 0 rem(76);
+
+    &:after {
+      margin-top: rem(56);
+    }
   }
 }
 
 .page-header--heading {
-
+  font-family: $fontSans;
+  font-size: rem(38);
+  line-height: 1.263;
+  letter-spacing: ls(20);
+  text-align: center;
+  margin-bottom: rem(8);
 }
 
   // TODO hover styles
@@ -54,18 +78,44 @@
 // --------------------------
 .page-footer {
   @include sans;
-  @include full-bleed(transparentize($grayDark, 0.96), down);
+  // @include full-bleed(transparentize($grayDark, 0.96), down);
   color: transparentize($grayDark, 0.4);
-  // TODO adjust
-  padding: rem(18) 0 rem(36);
+  padding-bottom: rem(38);
+
+  &:before {
+    content: "";
+    display: block;
+    border-top: rem(2) solid transparentize($grayDark, 0.92);
+    // (100% - 61.8%) / 2
+    margin: 0 19.1% rem(36);
+  }
 
   p {
-    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: rem(6);
   }
 
   @include respond($vostok) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    &:before {
+      width: 100%;
+    }
+
+    p {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  @include respond($ontario) {
+    padding-bottom: rem(46);
+
+    &:before {
+      margin-bottom: rem(44);
+    }
   }
 }
 
@@ -82,19 +132,33 @@
 // Crux
 // --------------------------
 .crux {
+  margin-bottom: rem(62);
+
   @include respond($ladoga) {
     display: flex;
 
     @supports (display: grid) {
       display: grid;
-      grid-template-columns: 1fr 34%;
+      grid-template-columns: 1fr 31%;
       grid-column-gap: rem(36);
-
-      @supports (--something: 1em) {
-        // grid-column-gap: calc(var(--space) / 0.618);
-        grid-column-gap: var(--space);
-      }
+      grid-column-gap: var(--space);
     }
+  }
+
+  @include respond($baikal) {
+    @supports (display: grid) {
+      grid-column-gap: calc(var(--space) / 0.618);
+    }
+  }
+
+  @include respond($balkhash) {
+    @supports (display: grid) {
+      grid-template-columns: 1fr 34%;
+    }
+  }
+
+  @include respond($ontario) {
+    margin-bottom: rem(74);
   }
 }
 
@@ -112,7 +176,17 @@
     padding-top: rem(36 / 1.618);
 
     @supports (--something: 1em) {
-      padding-top: calc(var(--space) / 1.618);
+      padding-top: var(--space);
+    } 
+
+    @include respond($ladoga) {
+      @supports (--something: 1em) {
+        padding-top: calc(var(--space) / 1.618);
+      }     
+    }
+
+    @include respond($ontario) {
+      padding-top: rem(32);
     }
   }
 }
@@ -139,18 +213,11 @@
 // --------------------------
 .copy {
   // text-align: justify;
-  // hyphens: auto;
+  hyphens: auto;
 
   a {
-    color: $teal;
-    transition: $duration box-shadow ease-out; 
-    box-shadow: 0 rem($lineThickness * -1) 0 0 transparent inset;
-    &:hover {
-      box-shadow: 0 rem($lineThickness * -1) 0 0 transparentize($teal, 0.7) inset;
-    }
-    &:focus {
-      outline-color: $teal;
-    }
+    @include link;
+    color: $green;
   }
 }
 

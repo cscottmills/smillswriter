@@ -39,10 +39,6 @@ body {
   @include respond($vostok) {
     font-size: 1.25em;
   }
-
-  @include respond($superior) {
-    font-size: 1.375em;
-  }
 }
 
 // Typography

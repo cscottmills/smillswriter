@@ -3,10 +3,11 @@
 
 // Colors
 // --------------------------------------------------------
-$offWhite: #fffdfa;
+$offWhite: #fffdf7;
 $grayDark: #181817;
 
 $teal: #49a3a4;
+$green: #60a649;
 
 // Typography
 // --------------------------------------------------------
@@ -22,9 +23,8 @@ $fontSans: 'Fira Sans', sans-serif;
 // --------------------------------------------------------
 // $containerWidth: ∞;
 
-$baseLineHeight: 1.667;
+$baseLineHeight: 1.778;
 $verticalSpace: ($baseLineHeight * 1em);
-$lineThickness: 1;
 
 $duration: 0.06s;
 $timing: ease;
@@ -32,16 +32,16 @@ $timing: ease;
 // Responsive breakpoints
 // https://en.wikipedia.org/wiki/List_of_lakes_by_area
 // --------------------------------------------------------
-$superior: 1300;
+// $superior: ;
 // $victoria: ;
 // $huron: ;
-// $michigan: ;
-// $baikal: ;
-// $malawi: ;
+$michigan: 1300;
+$baikal: 1260;
+$malawi: 1120;
 // $erie: ;
 // $winnipeg: ;
-// $ontario: ;
-// $balkhash: ;
-$ladoga: 840;
+$ontario: 920;
+$balkhash: 840;
+$ladoga: 760;
 $vostok: 660;
 $onega: 520;

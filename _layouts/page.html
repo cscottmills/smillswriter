@@ -3,26 +3,30 @@ layout: default
 ---
 
 {% if content.size > 1 %}
-<article class="crux">
-  <div class="crux--text copy{% if page.variant == 'list' %} garland{% endif %}">
-    {{ content }}
-  </div>
-  {% if page.images.size > 0 %}
-    <div class="crux--images">
-      {% for image in page.images %}
-        <img src="{{ image.url }}" alt="{{ image.alt }}">
-      {% endfor %}
+  <article class="crux">
+    <div class="crux--text copy{% if page.variant == 'list' %} garland{% endif %}">
+      {{ content }}
     </div>
-  {% endif %}
-</article>
+    {% if page.images.size > 0 %}
+      <div class="crux--images">
+        {% for image in page.images %}
+          <img src="{{ site.imagePath }}/{{ image.src }}.jpg" alt="{{ image.alt }}">
+        {% endfor %}
+      </div>
+    {% endif %}
+  </article>
+  {% if page.variant == 'grid' %}<hr>{% endif %}
 {% endif %}
 {% if page.variant == 'grid' %}
   <ul class="lectern">
     {% for book in site.data.books %}
       <li class="lectern--item">
-        <img src="{{ book.cover }}" class="lectern--image">
+        <img src="{{ site.imagePath }}/books/{{ book.title | slugify }}.jpg" class="lectern--image">
         <h3 class="lectern--heading">{{ book.title }} ({{ book.year }})</h3>
-        <p class="lectern--text">{{ book.details }}</p>
+        <p class="lectern--text copy">{{ book.details }}</p>
+        {% if book.source %}
+          <cite class="lectern--meta copy">{{ book.source | markdownify }}</cite>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

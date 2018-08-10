@@ -3,13 +3,14 @@
 
 // Text
 // --------------------------
-@mixin sans {
+@mixin sans($size: 1.188rem) {
   font-family: $fontSans;
   letter-spacing: ls(30);
   line-height: 1.316;
 
   @include respond($vostok) {
-    font-size: 1.188rem;
+    font-size: $size;
+    // font-size: 1.188rem;
   }
 }
 

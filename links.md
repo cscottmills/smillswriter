@@ -2,6 +2,9 @@
 layout: page
 variant: list
 title: Links
+images:
+  - src: fungi
+    alt: Fungi in Michigan's Upper Peninsula
 ---
 
 These are the links:

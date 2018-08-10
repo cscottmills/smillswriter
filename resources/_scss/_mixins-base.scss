@@ -34,7 +34,10 @@
     box-shadow: none;
     background-color: transparent;
   }
+
   @else {
+    background-color: $color;
+    
     @if $direction == none {
       box-shadow: -$width 0 0 0 $color, $width 0 0 0 $color, (-$width * 2) 0 0 0 $color, ($width * 2) 0 0 0 $color;
     }
@@ -46,7 +49,6 @@
     @if $direction == up {
       box-shadow: 0 (-$width) 0 $width $color;
     }
-    background-color: $color;
   }
 }
 

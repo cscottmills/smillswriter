@@ -2,10 +2,10 @@
 layout: page
 variant: home
 images:
-  - url: https://placeimg.com/500/700/nature
-    alt: An image
-  - url: https://placeimg.com/502/702/nature
-    alt: Another image
+  - src: portrait
+    alt: Stephanie Mills
+  - src: grand-marais
+    alt: The author on the dunes at Grand Marais, Michigan
 ---
 
 Since her galvanic Mills College commencement address in 1969, Stephanie Mills has been speaking, editing, writing, and organizing for ecology and social change. She has produced seven books, including *Epicurean Simplicity*, *Tough Little Beauties*, and the recently released *On Gandhi’s Path: Bob Swann’s Work for Peace and Community Economics*. A longtime bioregionalist and veteran of the Whole Earth publications, Stephanie Mills has written scores of essays and articles appearing in publications from Orion to The Britannica Book of the Year, as well as in numerous anthologies. Active in her community, Mills helped launch a local currency in northwest Lower Michigan, where she has lived since 1984. Featured in the PBS documentary *EarthDays*, Stephanie Mills holds an honorary doctorate from her alma mater and is a Fellow of the Post Carbon Institute.

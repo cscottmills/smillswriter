@@ -164,6 +164,8 @@
 }
 
 .crux--images {
+  margin-bottom: $verticalSpace;
+
   img {
     display: block;
     width: 100%;
@@ -190,35 +192,53 @@
 
 // Lectern
 // --------------------------
-// TODO narrow screen styles
 // ul
 .lectern {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 0;
 
-  @supports (display: grid) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: var(--space);
-    grid-row-gap: var(--space);
+  @include respond($erie) {
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: var(--space);
+      grid-row-gap: var(--space);
+    }
   }
 }
 
 // li
 .lectern--item {
+  @include block(556);
+  margin-bottom: rem(44);
+
   img {
     display: block;
     width: auto;
-    height: rem(488);
+    height: rem(400);
     margin-bottom: 1.25em;
+  }
+
+  @include respond($onega) {
+    margin-bottom: rem(62);
+
+    img {
+      height: rem(488);
+    }
+  }
+
+  @include respond($erie) {
+    @supports (display: grid) {
+      max-width: none;
+      margin: 0;
+    }
   }
 }
 
 .lectern--heading {
-  font-size: rem(24);
-  line-height: $lessLineHeight;
-  margin-bottom: 0.25em;
+  @include subhead;
+  padding-right: 1.618em;
 }
 
 .lectern--text {
@@ -238,7 +258,74 @@
       content: "\2013\00a0";
     }
   }
+}
 
+// Form
+// --------------------------
+.form {
+  label {
+    @include sans;
+    display: block;
+    color: transparentize($grayDark, 0.4);
+    margin-bottom: 0.25em;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparentize($grayDark, 0.95);
+    padding: 0 0.5em;
+
+    &:focus {
+      background-color: transparentize($green, 0.86);
+    }
+  }
+
+  input {
+    height: $verticalSpace;
+  }
+
+  textarea {
+    height: rem(154);
+    padding-top: rem(5);
+    padding-bottom: rem(5);
+    resize: none;
+  }
+
+  @include respond($onega) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+  }
+
+  @include respond($ladoga) {
+    display: block;
+  }
+
+  @include respond($malawi) {
+    display: grid;
+  }
+}
+
+.form--half {
+  margin-bottom: 1em;
+}
+
+.form--full {
+  grid-column-start: span 2;
+  margin-bottom: 1em;
+}
+
+.form--button {
+  @include link(0.1);
+  @include sans;
+  text-align: left;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 // Contexts
@@ -247,15 +334,24 @@
   // text-align: justify;
   // hyphens: auto;
 
-  a {
+  h2 {
+    @include subhead;
+  }
+
+  a,
+  button {
     @include link;
     color: $green;
   }
 }
 
-// TODO
 .garland {
   ul {
+    list-style-type: none;
+    padding-left: 0;;
+  }
 
+  li + li {
+    margin-top: 0.382em;
   }
 }

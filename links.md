@@ -3,6 +3,8 @@ layout: page
 variant: list
 title: Links
 images:
+  - src: portrait-2014
+    alt: Stephanie Mills
   - src: fungi
     alt: Fungi in Michigan's Upper Peninsula
 ---

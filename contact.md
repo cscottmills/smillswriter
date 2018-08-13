@@ -3,8 +3,8 @@ layout: page
 variant: form
 title: Contact
 images:
-  - src: estivant
-    alt: The author in Estivant Pines Nature Sanctuary
+  - src: grand-marais
+    alt: The author on the dunes at Grand Marais, Michigan
 ---
 
-Contact form here.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

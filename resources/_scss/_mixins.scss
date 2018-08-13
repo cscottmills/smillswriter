@@ -10,7 +10,6 @@
 
   @include respond($vostok) {
     font-size: $size;
-    // font-size: 1.188rem;
   }
 }
 
@@ -26,6 +25,20 @@
 
   &:focus {
     outline-color: $green;
+  }
+}
+
+@mixin subhead {
+  font-size: rem(19);
+  line-height: $lessLineHeight;
+  margin-bottom: 0.25em;
+
+  @include respond($onega) {
+    font-size: rem(22);
+  }
+
+  @include respond($vostok) {
+    font-size: rem(24);
   }
 }
 

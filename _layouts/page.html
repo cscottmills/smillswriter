@@ -6,6 +6,25 @@ layout: default
   <article class="crux">
     <div class="crux--text copy{% if page.variant == 'list' %} garland{% endif %}">
       {{ content }}
+      {% if page.variant == 'form' %}
+        <form class="form">
+          <div class="form--half">
+            <label for="formName">Your name</label>
+            <input type="text" name="formName">
+          </div>
+          <div class="form--half">
+            <label for="formName">Your email address</label>
+            <input type="email" name="formEmail">
+          </div>
+          <div class="form--full">
+            <label for="formName">Message</label>
+            <textarea name="formMessage"></textarea>
+          </div>
+          <div class="form--full copy">
+            <button class="form--button">Submit</button>
+          </div>
+        </form>
+      {% endif %}
     </div>
     {% if page.images.size > 0 %}
       <div class="crux--images">

@@ -26,18 +26,18 @@ html {
 
 body {
   font-family: $fontSerif;
-  font-size: 1em;
+  font-size: $baseSize;
   font-weight: normal;
   line-height: $baseLineHeight;
   color: $grayDark;
   background-color: $offWhite;
 
   @include respond($onega) {
-    font-size: 1.125em;
+    font-size: ($baseSize * 1.125);
   }
 
   @include respond($vostok) {
-    font-size: 1.25em;
+    font-size: ($baseSize * 1.25);
   }
 }
 

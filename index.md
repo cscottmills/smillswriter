@@ -4,8 +4,10 @@ variant: home
 images:
   - src: portrait
     alt: Stephanie Mills
-  - src: grand-marais
-    alt: The author on the dunes at Grand Marais, Michigan
+  - src: aspen
+    alt: Aspen leaf near the author's home
+  - src: ferns
+    alt: Bracken ferns near the author's home
 ---
 
 Since her galvanic Mills College commencement address in 1969, Stephanie Mills has been speaking, editing, writing, and organizing for ecology and social change. She has produced seven books, including *Epicurean Simplicity*, *Tough Little Beauties*, and the recently released *On Gandhi’s Path: Bob Swann’s Work for Peace and Community Economics*. A longtime bioregionalist and veteran of the Whole Earth publications, Stephanie Mills has written scores of essays and articles appearing in publications from Orion to The Britannica Book of the Year, as well as in numerous anthologies. Active in her community, Mills helped launch a local currency in northwest Lower Michigan, where she has lived since 1984. Featured in the PBS documentary *EarthDays*, Stephanie Mills holds an honorary doctorate from her alma mater and is a Fellow of the Post Carbon Institute.
@@ -16,6 +18,7 @@ Donec id nibh non tortor molestie [scelerisque](/). Nullam quis risus enim. Sed 
 
 Donec sed rhoncus nulla, ut luctus leo. Maecenas ullamcorper at dui quis convallis. Donec ac sapien sed lorem aliquet pharetra. Ut viverra faucibus lorem sit amet suscipit. Phasellus viverra semper rhoncus. Sed ultricies convallis metus, eu pretium est egestas sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim, mi sed blandit volutpat, mauris mi interdum sem, dictum ultrices ligula nisi ut felis. In iaculis magna non dui mollis vestibulum. Vestibulum ac lobortis ante, vitae tincidunt tellus. Donec quis sem varius, mattis turpis vel, malesuada arcu.
 
+## Subheading
 Fusce quis ipsum erat. Praesent pellentesque augue sed porttitor mollis. Nunc semper velit nisl, quis auctor augue hendrerit sed. Nam efficitur imperdiet mauris, at interdum nisi eleifend eget. Etiam eget odio ornare, tincidunt sem sit amet, varius metus. Vestibulum eu facilisis dolor. Nunc vitae lacus dignissim, imperdiet diam vel, aliquam purus. Vivamus vehicula sed magna eget tempus. Sed sapien arcu, tincidunt ut sagittis eu, laoreet vel diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin aliquet mollis tellus. Maecenas feugiat felis nulla, eget accumsan purus fermentum sit amet. Etiam tempus magna nec tempor tristique. Nam mi enim, rhoncus ut libero at, iaculis tincidunt ligula. Maecenas in justo id quam fringilla fringilla et id dolor. In sit amet velit in dui elementum accumsan.
 
 Sed nibh nulla, dictum nec libero sed, semper consectetur est. Fusce magna sem, dignissim vitae luctus non, euismod eget ipsum. Suspendisse venenatis urna quis nisl commodo vehicula. Quisque fermentum vehicula eros, a rutrum lacus varius quis. Ut facilisis augue dolor, eget maximus elit mattis efficitur. Integer vel pulvinar enim. Ut faucibus eget ipsum nec ultrices. Praesent nec aliquam risus, eget venenatis tortor. Pellentesque ac quam ullamcorper, efficitur massa tempus, commodo ante. In ut sapien commodo neque faucibus lobortis in semper augue.

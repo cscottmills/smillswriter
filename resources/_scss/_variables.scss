@@ -11,19 +11,29 @@ $green: #60a649;
 
 // Typography
 // --------------------------------------------------------
-// $fontSerif: 'Cardo', serif;
-// $fontSerif: 'Libre Baskerville', serif;
-$fontSerif: 'Source Serif Pro', serif;
 
 // $fontSans: 'Amiko', sans-serif;
-$fontSans: 'Fira Sans', sans-serif;
 // $fontSans: 'Source Sans Pro', sans-serif;
+
+$baseSize: 1em;
+$fontSerif: 'Source Serif Pro', serif;
+$fontSans: 'Fira Sans', sans-serif;
+$baseLineHeight: 1.778;
+
+// $baseSize: 0.9em;
+// $fontSerif: 'Libre Baskerville', serif;
+// $fontSans: 'Fira Sans', sans-serif;
+// $baseLineHeight: 1.95;
+
+// $baseSize: 1.05em;
+// $fontSerif: 'Cardo', serif;
+// $fontSans: 'Fira Sans', sans-serif;
+// $baseLineHeight: 1.7;
 
 // Measurements
 // --------------------------------------------------------
 // $containerWidth: ∞;
 
-$baseLineHeight: 1.778;
 $lessLineHeight: 1.263;
 $verticalSpace: ($baseLineHeight * 1em);
 
@@ -33,14 +43,10 @@ $timing: ease;
 // Responsive breakpoints
 // https://en.wikipedia.org/wiki/List_of_lakes_by_area
 // --------------------------------------------------------
-// $superior: ;
-// $victoria: ;
-// $huron: ;
 $michigan: 1300;
 $baikal: 1260;
 $malawi: 1120;
-// $erie: ;
-// $winnipeg: ;
+$erie: 1040;
 $ontario: 920;
 $balkhash: 840;
 $ladoga: 760;

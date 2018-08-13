@@ -67,9 +67,9 @@
 
 // Block
 // --------------------------
-@mixin block($width, $context: $emBase) {
+@mixin block($width) {
   width: 100%;
-  max-width: em($width, $context);
+  max-width: rem($width);
   height: auto;
   margin-right: auto;
   margin-left: auto;

@@ -5,7 +5,7 @@
 // --------------------------
 @mixin sans($size: 1.188rem) {
   font-family: $fontSans;
-  letter-spacing: ls(30);
+  letter-spacing: ls(10);
   line-height: 1.316;
 
   @include respond($vostok) {
@@ -29,9 +29,11 @@
 }
 
 @mixin subhead {
-  font-size: rem(19);
+  @include sans(1.188rem);
+  // font-size: rem(19);
+  font-weight: 600;
   line-height: $lessLineHeight;
-  margin-bottom: 0.25em;
+  margin-bottom: 1em;
 
   @include respond($onega) {
     font-size: rem(22);

@@ -12,23 +12,24 @@ $green: #60a649;
 // Typography
 // --------------------------------------------------------
 
+// $fontSerif: 'Source Serif Pro', serif;
+
 // $fontSans: 'Amiko', sans-serif;
 // $fontSans: 'Source Sans Pro', sans-serif;
+$fontSans: 'gill sans';
+// $fontSans: 'Fira Sans', sans-serif;
 
-$baseSize: 1em;
-$fontSerif: 'Source Serif Pro', serif;
-$fontSans: 'Fira Sans', sans-serif;
-$baseLineHeight: 1.778;
+// $baseSize: 1em;
+// $fontSerif: 'Charter', serif;
+// $baseLineHeight: 1.778;
 
 // $baseSize: 0.9em;
 // $fontSerif: 'Libre Baskerville', serif;
-// $fontSans: 'Fira Sans', sans-serif;
 // $baseLineHeight: 1.95;
 
-// $baseSize: 1.05em;
-// $fontSerif: 'Cardo', serif;
-// $fontSans: 'Fira Sans', sans-serif;
-// $baseLineHeight: 1.7;
+$baseSize: 1.05em;
+$fontSerif: 'Cardo', serif;
+$baseLineHeight: 1.7;
 
 // Measurements
 // --------------------------------------------------------

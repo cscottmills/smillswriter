@@ -332,7 +332,7 @@
 // --------------------------
 .copy {
   // text-align: justify;
-  // hyphens: auto;
+  hyphens: auto;
 
   h2 {
     @include subhead;

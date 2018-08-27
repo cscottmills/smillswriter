@@ -9,7 +9,8 @@ images:
     alt: Fungi in Michigan's Upper Peninsula
 ---
 
-These are the links:
+## These are the links
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 
 - [Lorem ipsum dolor](/) sit amet, consectetur adipiscing elit.
 - [Quisque congue dolor](/) sit amet libero semper tempor in vel nulla.

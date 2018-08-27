@@ -11,15 +11,16 @@ $green: #60a649;
 
 // Typography
 // --------------------------------------------------------
-$baseSize: 1.05em;
-$fontSerif: 'Cardo', serif;
-$fontSans: 'gill sans';
-$baseLineHeight: 1.7;
+$baseSize: 1.125em;
+
+$fontSerif: 'cardo', serif;
+$fontSans: 'gill sans', 'palanquin', sans-serif;
 
 // Measurements
 // --------------------------------------------------------
 // $containerWidth: ∞;
 
+$baseLineHeight: 1.714;
 $lessLineHeight: 1.263;
 $verticalSpace: ($baseLineHeight * 1em);
 

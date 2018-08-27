@@ -1,0 +1,51 @@
+// Fonts
+// -----
+
+// Cardo
+// --------------------------------------------------------
+// Regular
+@font-face {
+  font-family: "cardo";
+  src: url('../fonts/cardo-regular.woff2') format('woff2'),
+       url('../fonts/cardo-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Italic
+@font-face {
+  font-family: "cardo";
+  src: url('../fonts/cardo-italic.woff2') format('woff2'),
+       url('../fonts/cardo-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// Bold
+@font-face {
+  font-family: "cardo";
+  src: url('../fonts/cardo-bold.woff2') format('woff2'),
+       url('../fonts/cardo-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Palanquin
+// --------------------------------------------------------
+// Regular
+@font-face {
+  font-family: "palanquin";
+  src: url('../fonts/palanquin-regular.woff2') format('woff2'),
+       url('../fonts/palanquin-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Bold
+@font-face {
+  font-family: "palanquin";
+  src: url('../fonts/palanquin-bold.woff2') format('woff2'),
+       url('../fonts/palanquin-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

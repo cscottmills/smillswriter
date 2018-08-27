@@ -33,11 +33,7 @@ body {
   background-color: $offWhite;
 
   @include respond($onega) {
-    font-size: ($baseSize * 1.125);
-  }
-
-  @include respond($vostok) {
-    font-size: ($baseSize * 1.25);
+    font-size: ($baseSize * 1.167);
   }
 }
 

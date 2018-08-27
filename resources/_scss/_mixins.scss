@@ -3,7 +3,7 @@
 
 // Text
 // --------------------------
-@mixin sans($size: 1.188rem) {
+@mixin sans($size: 1.25rem) {
   font-family: $fontSans;
   letter-spacing: ls(10);
   line-height: 1.316;
@@ -29,11 +29,10 @@
 }
 
 @mixin subhead {
-  @include sans(1.188rem);
-  // font-size: rem(19);
+  @include sans(1.25rem);
   font-weight: 600;
   line-height: $lessLineHeight;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 
   @include respond($onega) {
     font-size: rem(22);

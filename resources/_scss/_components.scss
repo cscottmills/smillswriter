@@ -79,7 +79,6 @@
 // --------------------------
 .page-footer {
   @include sans;
-  // @include full-bleed(transparentize($grayDark, 0.96), down);
   color: transparentize($grayDark, 0.4);
   padding-bottom: rem(38);
 

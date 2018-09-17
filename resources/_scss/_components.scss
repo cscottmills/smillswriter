@@ -245,20 +245,20 @@
   margin-bottom: 0.382em;
 }
 
-.lectern--meta {
-  display: block;
-  font-style: normal;
-  padding-left: 1em;
+// .lectern--meta {
+//   display: block;
+//   font-style: normal;
+//   padding-left: 1em;
 
-  p {
-    @include sans(1.063rem);
-    margin-bottom: 0;
+//   p {
+//     @include sans(1.063rem);
+//     margin-bottom: 0;
 
-    &:before {
-      content: "\2013\00a0";
-    }
-  }
-}
+//     &:before {
+//       content: "\2013\00a0";
+//     }
+//   }
+// }
 
 // Form
 // --------------------------
@@ -332,7 +332,7 @@
 // --------------------------
 .copy {
   // text-align: justify;
-  hyphens: auto;
+  // hyphens: auto;
 
   h2 {
     @include subhead;

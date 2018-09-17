@@ -38,14 +38,11 @@ layout: default
 {% endif %}
 {% if page.variant == 'grid' %}
   <ul class="lectern">
-    {% for book in site.data.books %}
+    {% for book in site.posts %}
       <li class="lectern--item">
         <img src="{{ site.imagePath }}/books/{{ book.title | slugify }}.jpg" class="lectern--image">
         <h3 class="lectern--heading">{{ book.title }} ({{ book.year }})</h3>
-        <p class="lectern--text copy">{{ book.details }}</p>
-        {% if book.source %}
-          <cite class="lectern--meta copy">{{ book.source | markdownify }}</cite>
-        {% endif %}
+        <p class="lectern--text copy">{{ book.content }}</p>
       </li>
     {% endfor %}
   </ul>

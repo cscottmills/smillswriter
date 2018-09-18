@@ -274,9 +274,9 @@
   textarea {
     display: block;
     width: 100%;
-    border: none;
     background-color: transparentize($grayDark, 0.95);
     padding: 0 0.5em;
+    border: none;
 
     &:focus {
       background-color: transparentize($green, 0.86);

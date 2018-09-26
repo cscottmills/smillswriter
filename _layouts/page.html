@@ -2,49 +2,63 @@
 layout: default
 ---
 
-{% if content.size > 1 %}
-  <article class="crux">
-    <div class="crux--text copy{% if page.variant == 'list' %} garland{% endif %}">
+<article class="crux">
+  <div class="crux--text copy{% if page.variant == 'list' %} garland{% endif %}">
+    {% if content.size > 1 %}
       {{ content }}
-      {% if page.variant == 'form' %}
-        <form class="form" action="https://formspree.io/cscottmills@gmail.com"
-              method="POST">
-          <div class="form--half">
-            <label for="name">Your name</label>
-            <input type="text" name="name">
-          </div>
-          <div class="form--half">
-            <label for="_replyto">Your email address</label>
-            <input type="email" name="_replyto">
-          </div>
-          <div class="form--full">
-            <label for="message">Message</label>
-            <textarea name="message"></textarea>
-          </div>
-          <div class="form--full copy">
-            <button class="form--button" value="Send">Submit</button>
-          </div>
-          <input type="hidden" name="_next" value="http://localhost:4000/contact/thanks" />
-        </form>
-      {% endif %}
-    </div>
-    {% if page.images.size > 0 %}
-      <div class="crux--images">
-        {% for image in page.images %}
-          <img src="{{ site.imagePath }}/{{ image.src }}.jpg" alt="{{ image.alt }}">
-        {% endfor %}
-      </div>
     {% endif %}
-  </article>
-  {% if page.variant == 'grid' %}<hr>{% endif %}
-{% endif %}
+    {% if page.variant == 'form' %}
+      <form class="form" action="https://formspree.io/cscottmills@gmail.com"
+            method="POST">
+        <div class="form--half">
+          <label for="name">Your name</label>
+          <input type="text" name="name">
+        </div>
+        <div class="form--half">
+          <label for="_replyto">Your email address</label>
+          <input type="email" name="_replyto">
+        </div>
+        <div class="form--full">
+          <label for="message">Message</label>
+          <textarea name="message"></textarea>
+        </div>
+        <div class="form--full copy">
+          <button class="form--button" value="Send">Submit</button>
+        </div>
+        <input type="hidden" name="_next" value="http://localhost:4000/contact/thanks" />
+      </form>
+    {% endif %}
+  </div>
+  {% if page.images.size > 0 %}
+    <div class="crux--images">
+      {% for image in page.images %}
+        <img src="{{ site.imagePath }}/{{ image.src }}.jpg" alt="{{ image.alt }}">
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% if page.variant == 'post' %}
+    <div class="crux--images">
+      <img src="{{ site.imagePath }}/books/{{ page.title | slugify }}.jpg" alt="Cover of {{ page.title }}">
+    </div>
+  {% endif %}
+  {% if page.variant == 'post' %}
+    <div class="crux--footer copy">
+      <a href="/books">&larr; Back to all books</a>
+    </div>
+  {% endif %}
+</article>
 {% if page.variant == 'grid' %}
   <ul class="lectern">
     {% for book in site.posts %}
       <li class="lectern--item">
-        <img src="{{ site.imagePath }}/books/{{ book.title | slugify }}.jpg" class="lectern--image">
-        <h3 class="lectern--heading">{{ book.title }} ({{ book.year }})</h3>
-        <p class="lectern--text copy">{{ book.content }}</p>
+        {% if book.content.size > 1 %}
+          <a href="{{ book.url }}">
+        {% endif %}
+          <img src="{{ site.imagePath }}/books/{{ book.title | slugify }}.jpg" class="lectern--image">
+          <h3 class="lectern--heading">{{ book.title }} ({{ book.year }})</h3>
+        {% if book.content.size > 1 %}
+          </a>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

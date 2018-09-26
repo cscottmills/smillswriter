@@ -3,7 +3,7 @@ title: On Gandhi's Path
 year: 2010
 ---
 
-From Chellis Glendinning’s *Resurgence* magazine review of *On Gandhi’s Path*:
+## From Chellis Glendinning’s *Resurgence* magazine review of *On Gandhi’s Path*
 
 [Robert] Swann was a nonviolent war resister. He was a civil rights activist, an agrarian decentralist, and a pioneer of intentional communities, local currencies, micro-lending, natural architecture and land trusts. And along with fellow just-economics thinker Susan Witt, he co-founded the US-based E.F. Schumacher Society in Great Barrington, Massachusetts.
 

@@ -1,4 +1,6 @@
 ---
+layout: page
+variant: post
 title: In Praise of Nature
 year: 1990
 ---

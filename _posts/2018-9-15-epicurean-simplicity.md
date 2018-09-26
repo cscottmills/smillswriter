@@ -1,9 +1,11 @@
 ---
+layout: page
+variant: post
 title: Epicurean Simplicity
 year: 2003
 ---
 
-From the *Foreword* review of *Epicurean Simplicity*:
+## From the *Foreword* review of *Epicurean Simplicity*
 
 Mills, a land preservation advocate and author of *In Praise of Nature* and *Turning Away from Technology*, offers a thoughtful introduction to a philosopher few know today, except as an adjective denoting high living. Epicurus, she explains, was neither gourmand nor hedonist. Rather, his bad name came in part from early church fathers scandalized at his view that life, to be good, must acknowledge the pleasures of the senses. He did not advocate glutting those senses, instead urging his followers to appreciate and savor the moment and the sensation at hand. According to Mills and her cited research, Epicurus is thus the perfect patron for a simple life that appreciates nature and treads more lightly on the earth.
 

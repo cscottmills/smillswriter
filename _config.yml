@@ -3,7 +3,7 @@ author:
   name: Stephanie Mills
 url: http://smillswriter.com
 imagePath: /resources/images
-permalink: /:title/
+permalink: /:categories/:title/
 exclude: [vendor, Gemfile, Gemfile.lock]
 timezone: America/Detroit
 markdown: kramdown
@@ -12,3 +12,12 @@ kramdown:
 sass:
   sass_dir: resources/_scss
   style: :compressed
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      layout: "page"
+      variant: "post"
+      category: "books"

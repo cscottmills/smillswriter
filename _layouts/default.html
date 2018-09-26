@@ -18,7 +18,7 @@
     <header class="page-header">
       <h1 class="page-header--heading"><a href="/">{{ site.title }}</a></h1>
       <nav class="page-header--nav">
-        {% assign navLinks = "books links contact" | split: ' ' %}
+        {% assign navLinks = "books contact" | split: ' ' %}
         {% capture branch %}{{ page.url }}{% endcapture %}
         <a {% if branch == '/' %}class="active"{% endif %} href="/">Bio</a>{% for link in navLinks %}<a {% if branch contains link %}class="active"{% endif %} href="/{{ link }}">{{ link | capitalize }}</a>{% endfor %}
       </nav>

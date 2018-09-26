@@ -1,9 +1,11 @@
 ---
+layout: page
+variant: post
 title: Tough Little Beauties
 year: 2007
 ---
 
-From the *Foreword* review of *Tough Little Beauties*:
+## From the *Foreword* review of *Tough Little Beauties*
 
 Spanning more than thirty years, the essays here range from thoughts about Michigan, Mills’ home, and expand to her travel in India, giving the work both a local and a global flavor. In terms of subject matter, she addresses abortion, oil production, politics, feminism, spiritual life, and globalization. Although she treads wide terrain, her environmentalism provides the thread tying the collection together, and the way she unites self-awareness and reflection with a call to action for humanity is done with humor, intelligence, and &ndash; despite her initial description &ndash; plenty of optimism.
 

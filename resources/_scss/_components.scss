@@ -227,10 +227,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: opacity $duration $timing;
 
     &:hover {
-      opacity: 0.9;
+      img {
+        opacity: 0.92;
+        box-shadow: 0 0 0 rem(8) transparentize($green, 0.8);
+      }
     }
   }
 
@@ -239,6 +241,11 @@
     width: auto;
     height: rem(400);
     margin-bottom: 1.25em;
+    box-shadow: 0 0 0 rem(8) transparent;
+    transition:
+      box-shadow ($duration * 2) $timing,
+      opacity ($duration * 2) $timing
+    ;
   }
 
   @include respond($onega) {
@@ -258,29 +265,15 @@
 }
 
 .lectern--heading {
-  @include subhead;
-  // padding-right: 1.618em;
+  @include subhead(0.2em);
   padding: 0 0.618em;
 }
 
 .lectern--text {
-  margin-bottom: 0.382em;
+  @include sans;
+  color: $green;
+  margin-bottom: 0;
 }
-
-// .lectern--meta {
-//   display: block;
-//   font-style: normal;
-//   padding-left: 1em;
-
-//   p {
-//     @include sans(1.063rem);
-//     margin-bottom: 0;
-
-//     &:before {
-//       content: "\2013\00a0";
-//     }
-//   }
-// }
 
 // Form
 // --------------------------

@@ -28,11 +28,11 @@
   }
 }
 
-@mixin subhead {
+@mixin subhead($space: 0.8em) {
   @include sans(1.25rem);
   font-weight: 600;
   line-height: $lessLineHeight;
-  margin-bottom: 0.8em;
+  margin-bottom: $space;
 
   @include respond($onega) {
     font-size: rem(22);

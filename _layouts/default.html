@@ -7,10 +7,9 @@
   <meta name="description" content="The personal website of {{ site.author.name }}">
   <meta name="author" content="{{ site.author.name }}">
   <meta content="{{ site.title }}" property="og:site_name">
-  <meta content="{{ site.url }}{{ page.url | remove: '/index.html' }}" property="og:url">
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
   {% if page.title %}<meta content="{{ page.title }}" property="og:title">{% endif %}
   <meta content="website" property="og:type">
-  <!-- <link rel="icon" href="/favicon.png"> -->
   <link rel="stylesheet" href="/resources/css/styles.css">
 </head>
 <body>

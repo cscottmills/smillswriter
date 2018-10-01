@@ -1,6 +1,5 @@
 ---
 layout: page
-variant: home
 ---
 
-## Site coming soon!
+## New site coming soon soon!

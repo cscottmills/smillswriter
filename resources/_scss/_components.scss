@@ -369,4 +369,11 @@
   li + li {
     margin-top: 0.382em;
   }
+
+  h3 {
+    font-size: 1em;
+    font-family: $fontSans;
+    font-weight: 600;
+    letter-spacing: ls(10);
+  }
 }

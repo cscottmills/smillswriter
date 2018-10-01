@@ -2,4 +2,4 @@
 layout: page
 ---
 
-## New site coming soon soon!
+## New site coming soon!

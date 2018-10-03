@@ -1,7 +1,7 @@
 title: Stephanie Mills
 author:
   name: Stephanie Mills
-url: http://smillswriter.com
+url: https://smillswriter.com
 imagePath: /resources/images
 permalink: /:categories/:title/
 exclude: [vendor, Gemfile, Gemfile.lock]

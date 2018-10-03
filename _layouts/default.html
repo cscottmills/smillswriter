@@ -16,7 +16,7 @@
   <div class="container">
     <header class="page-header">
       {% capture branch %}{{ page.url }}{% endcapture %}
-      <h1 class="page-header--heading"><a href="/">{% if page.heading %}{{ page.heading }}{% else %}{{ site.title }}{% endif %}</a></h1>
+      <h1 class="page-header--heading">{% if page.heading %}{{ page.heading }}{% else %}{{ site.title }}{% endif %}</h1>
       <nav class="page-header--nav">
         {% assign navLinks = "books links contact" | split: ' ' %}
         <a {% if branch == '/' %}class="active"{% endif %} href="/">Bio</a>{% for link in navLinks %}<a {% if branch contains link %}class="active"{% endif %} href="/{{ link }}">{{ link | capitalize }}</a>{% endfor %}

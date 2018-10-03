@@ -10,7 +10,7 @@ images:
 ---
 
 - ### [PostCarbon Institute](https://postcarbon.org){:target="_blank"}
-	A think tank providing rigorous energy analyses and humane, realistic guidance towards community resilience through books, online courses, and its indispensable [Resilience](https://resilience.org){:target="_blank"} website. The cosmopolitan, daily updated website carries essays by Richard Heinberg and many others along with hopeful testaments from grassroots organizers and thoughtful explorations of the political philosophy and practice of relocalization.
+	A think tank providing rigorous energy analyses and humane, realistic guidance towards community resilience through books, online courses, and its indispensable [Resilience](https://resilience.org){:target="_blank"} website. The cosmopolitan, daily updated website carries essays by Richard Heinberg and many other leading thinkers along with hopeful testaments from grassroots organizers and thoughtful explorations of the political philosophy and practice of relocalization.
 - ### [Planet Drum](http://planetdrum.org){:target="_blank"}
 	“A voice for bioregional sustainability, education, and culture.” The hub of bioregionalism and primary source for a wide array of print, audio, and video materials and a repository of Peter Berg’s brilliant, foundational work.
 - ### [NatureChange](http://naturechange.org){:target="_blank"}

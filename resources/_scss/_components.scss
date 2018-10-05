@@ -353,6 +353,15 @@
     @include subhead;
   }
 
+  p {
+    // margin-bottom: 0.25em;
+    margin-bottom: 0;
+
+    &:not(:first-of-type) {
+      text-indent: $verticalSpace;
+    }
+  }
+
   a,
   button {
     @include link;
@@ -367,7 +376,7 @@
   }
 
   li + li {
-    margin-top: 0.382em;
+    margin-top: $verticalSpace + 0.382em;
   }
 
   h3 {

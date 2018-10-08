@@ -1,6 +1,4 @@
 ---
-layout: page
-variant: post
 title: Whatever Happened to Ecology?
 year: 1989
 ---

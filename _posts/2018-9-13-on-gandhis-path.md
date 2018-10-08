@@ -1,6 +1,7 @@
 ---
 title: On Gandhi's Path
 year: 2010
+isbn: 9780865716155
 ---
 
 ## From Chellis Glendinning’s *Resurgence* magazine review of *On Gandhi’s Path*

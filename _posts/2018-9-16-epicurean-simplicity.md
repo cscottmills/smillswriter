@@ -1,8 +1,7 @@
 ---
-layout: page
-variant: post
 title: Epicurean Simplicity
 year: 2003
+isbn: 9781559636902
 ---
 
 ## From the *Foreword* review of *Epicurean Simplicity*

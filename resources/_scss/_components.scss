@@ -199,17 +199,26 @@
 .crux--button {
   @include sans;
   display: block;
+  color: white;
   font-weight: 600;
   line-height: 1.7;
-  text-transform: uppercase;
-  color: white;
   background-color: transparentize($green, 0.2);
+  text-transform: uppercase;
   padding: 0 0.5em;
+  position: relative;
   transition: background-color $duration $timing;
 
   &:hover {
     background-color: transparentize($green, 0.3);
   }
+}
+
+.crux--aside {
+  @include sans(1rem);
+  max-width: rem(300);
+  text-align: center;
+  color: transparentize($grayDark, 0.65);
+  margin: auto 0 0;
 }
 
 .crux--footer {

@@ -1,8 +1,7 @@
 ---
-layout: page
-variant: post
 title: In Service of the Wild
 year: 1996
+isbn: 9780807085356
 ---
 
 ## KIRKUS REVIEW of *In Service of the Wild: Restoring and Reinhabiting Damaged Land*

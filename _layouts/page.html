@@ -39,7 +39,10 @@ layout: default
   {% if page.variant == 'post' %}
     <div class="crux--images in-post">
       <img src="{{ site.imagePath }}/books/{{ page.title | slugify }}.jpg" alt="Cover of {{ page.title }}">
-      <!-- <a href="/" class="crux--button">Buy</a> -->
+      {% if page.isbn %}
+        <a href="https://www.brilliant-books.net/book/{{ page.isbn }}/aff/10137" class="crux--button" target="_blank">Buy</a>
+        <p class="crux--aside">(Note: the author earns a commission from the purchase of this book)</p>
+      {% endif %}
     </div>
   {% endif %}
   {% if page.variant == 'post' %}

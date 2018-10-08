@@ -1,8 +1,7 @@
 ---
-layout: page
-variant: post
 title: Tough Little Beauties
 year: 2007
+isbn: 9781888160307
 ---
 
 ## From the *Foreword* review of *Tough Little Beauties*

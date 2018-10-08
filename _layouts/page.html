@@ -37,8 +37,9 @@ layout: default
     </div>
   {% endif %}
   {% if page.variant == 'post' %}
-    <div class="crux--images">
+    <div class="crux--images in-post">
       <img src="{{ site.imagePath }}/books/{{ page.title | slugify }}.jpg" alt="Cover of {{ page.title }}">
+      <!-- <a href="/" class="crux--button">Buy</a> -->
     </div>
   {% endif %}
   {% if page.variant == 'post' %}

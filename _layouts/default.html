@@ -26,7 +26,7 @@
       {{ content }}
     </main>
     <footer class="page-footer">
-      <p>&copy; 2018 Stephanie Mills</p>
+      <p>&copy; {{ site.time | date: '%Y' }} Stephanie Mills</p>
       <nav class="page-footer--nav">
         <a {% if branch == '/' %}class="active"{% endif %} href="/">Bio</a>{% for link in navLinks %}<a {% if branch contains link %}class="active"{% endif %} href="/{{ link }}">{{ link | capitalize }}</a></li>{% endfor %}
       </nav>

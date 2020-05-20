@@ -15,9 +15,17 @@ sass:
 defaults:
   -
     scope:
-      path: ""
+      path: "_posts/books"
       type: "posts"
     values:
       layout: "page"
       variant: "post"
       category: "books"
+  -
+    scope:
+      path: "_posts/essays"
+      type: "posts"
+    values:
+      layout: "page"
+      variant: "essay"
+      category: "essays"

@@ -87,7 +87,7 @@ hr {
   border: none;
   border-top: rem(2) solid transparentize($grayDark, 0.92);
   // 61.8% / 2
-  margin: 0 30.9% var(--space);
+  margin: var(--space) 30.9%;
 }
 
 input,

@@ -53,7 +53,7 @@ layout: default
 </article>
 {% if page.variant == 'grid' %}
   <ul class="lectern">
-    {% for book in site.posts %}
+    {% for book in site.categories.books %}
       <li class="lectern--item">
         {% if book.content.size > 1 %}
           <a href="{{ book.url }}">

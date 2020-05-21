@@ -1,0 +1,19 @@
+---
+layout: page
+variant: list
+title: Essays & Talks
+images:
+  - src: portrait-2014
+    alt: Stephanie Mills
+  - src: fungi
+    alt: Fungi in Michigan's Upper Peninsula
+---
+
+<ul>
+  {% for post in site.categories.essays-talks %}
+    <li>
+      <h3><a href="{{ post.url }}">{{ post.title }} ({{ post.year }})</a></h3>
+      <p>{{ post.context }}</p>
+    </li>
+  {% endfor %}
+</ul>

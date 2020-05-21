@@ -9,6 +9,7 @@ timezone: America/Detroit
 markdown: kramdown
 kramdown:
   auto_ids: false
+  parse_block_html: true
 sass:
   sass_dir: resources/_scss
   style: :compressed
@@ -28,4 +29,4 @@ defaults:
     values:
       layout: "page"
       variant: "essay"
-      category: "essays"
+      category: "essays-talks"

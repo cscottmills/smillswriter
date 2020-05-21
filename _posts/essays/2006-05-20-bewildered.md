@@ -1,9 +1,7 @@
 ---
 title: Bewildered
----
-
-Published by Ice Cube Press in *Live Well, Live Wild*, a chapbook from the Second Iowa Conference on the Wild held in 2006 at the University of Iowa.
-
+year: 2006
+context: 'An essay published by Ice Cube Press in <em class="underline">Live Well, Live Wild</em>, a chapbook from the Second Iowa Conference on the Wild held in 2006 at the University of Iowa.'
 ---
 
 ​In our time, the wild is an ever-receding horizon. With every technological intrusion and political-economic travesty, it becomes necessary to qualify wildness. We can’t control or deny the wildness of vast phenomena like volcanism or the weather. Obscure realms of insects, fungi, and protozoa teem with wildlife. The earth’s rotation is wild. The sun is wild. But in the mesocosm, where we live, what’s wild is under continual assault.

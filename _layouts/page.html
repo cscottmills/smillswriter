@@ -4,6 +4,12 @@ layout: default
 
 <article class="crux">
   <div class="crux--text copy{% if page.variant == 'list' %} garland{% endif %}">
+    {% if page.variant == 'essay' %}
+      <header class="crux--header">
+        <h2 class="crux--head">{{ page.title }}</h2>
+        <p class="crux--meta">({{ page.year }})</p>
+      </header>
+    {% endif %}
     {% if content.size > 1 %}
       {{ content }}
     {% endif %}
@@ -36,6 +42,13 @@ layout: default
       {% endfor %}
     </div>
   {% endif %}
+  {% if page.variant == 'essay' and page.context %}
+    <div class="crux--images in-post">
+      <aside class="crux--context copy">
+        <p>{{ page.context }}</p>
+      </aside>
+    </div>
+  {% endif %}
   {% if page.variant == 'post' %}
     <div class="crux--images in-post">
       <img src="{{ site.imagePath }}/books/{{ page.title | slugify }}.jpg" alt="Cover of {{ page.title }}">
@@ -48,6 +61,11 @@ layout: default
   {% if page.variant == 'post' %}
     <div class="crux--footer copy">
       <a href="/books">&lsaquo; Back to all books</a>
+    </div>
+  {% endif %}
+  {% if page.variant == 'essay' %}
+    <div class="crux--footer copy">
+      <a href="/essays-talks">&lsaquo; Back to all essays &amp; talks</a>
     </div>
   {% endif %}
 </article>

@@ -161,8 +161,36 @@
 
 // .crux--text {}
 
-.crux--images {
+.crux--header {
   margin-bottom: $verticalSpace;
+}
+
+.crux--head {
+  .copy & {
+    @include subhead(0.125em);
+  }
+}
+
+.crux--meta {
+  @include sans;
+  color: transparentize($grayDark, 0.4);
+}
+
+.crux--context {
+  @include sans;
+  color: transparentize($grayDark, 0.3);
+
+  background-color: transparentize($green, 0.8);
+  padding: rem(8) rem(12) rem(9);
+  margin: 0 rem(-12);
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.crux--images {
+  margin: $verticalSpace 0;
 
   &.in-post {
     display: flex;
@@ -195,6 +223,10 @@
     @include respond($ontario) {
       padding-top: rem(32);
     }
+  }
+
+  @include respond($ladoga) {
+    margin-top: 0;
   }
 }
 
@@ -408,6 +440,11 @@
   .underline {
     font-style: normal;
     text-decoration: underline;
+  }
+
+  audio {
+    width: 100%;
+    margin-bottom: $verticalSpace;
   }
 }
 

@@ -83,6 +83,10 @@ ol {
   }
 }
 
+blockquote {
+  margin: 0 0 0 ($verticalSpace * 2);
+}
+
 hr {
   border: none;
   border-top: rem(2) solid transparentize($grayDark, 0.92);
@@ -99,7 +103,7 @@ button {
 }
 
 figure {
-  margin: 0;
+  margin: 0 0 $verticalSpace;
 }
 
 // Inline elements

@@ -422,6 +422,18 @@
     @include subhead;
   }
 
+  h3 {
+    @include sans(1em);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: $lessLineHeight;
+    margin-bottom: 0.4em;
+  }
+
+  p + h3 {
+    padding-top: var(--space);    
+  }
+
   p {
     // margin-bottom: 0.25em;
     margin-bottom: 0;
@@ -429,6 +441,11 @@
     &:not(:first-of-type) {
       text-indent: $verticalSpace;
     }
+  }
+
+  h3 + p:not(:first-of-type),
+  hr + p:not(:first-of-type) {
+    text-indent: 0;
   }
 
   a,
@@ -459,9 +476,6 @@
   }
 
   h3 {
-    font-size: 1em;
-    font-family: $fontSans;
-    font-weight: 600;
-    letter-spacing: ls(10);
+    margin-bottom: rem(3);
   }
 }

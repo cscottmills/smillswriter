@@ -18,7 +18,8 @@
       {% capture branch %}{{ page.url }}{% endcapture %}
       <h1 class="page-header--heading">{% if page.heading %}{{ page.heading }}{% else %}{{ site.title }}{% endif %}</h1>
       <nav class="page-header--nav">
-        {% assign navLinks = "Books, Essays & Talks, Links, Contact" | split: ', ' %}
+        {% comment %}{% assign navLinks = "Books, Essays & Talks, Links, Contact" | split: ', ' %}{% endcomment %}
+        {% assign navLinks = "Books, Links, Contact" | split: ', ' %}
         <a {% if branch == '/' %}class="active"{% endif %} href="/">Bio</a>
         {% for link in navLinks %}
           {% assign leaf = link | slugify %}

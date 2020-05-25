@@ -30,3 +30,4 @@ defaults:
       layout: "page"
       variant: "essay"
       category: "essays-talks"
+      permalink: /preview-020200525/:categories/:title/

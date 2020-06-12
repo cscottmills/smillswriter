@@ -2,6 +2,7 @@
 title: Going Back to Nature When Nature’s All But Gone
 year: 2007
 context: 'A keynote address given at the International Association for Environmental Philosophy’s meeting in November of 2007'
+tags: text
 ---
 
 *Dedicated to the memory of Paul Shepard*

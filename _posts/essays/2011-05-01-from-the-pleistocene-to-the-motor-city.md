@@ -2,6 +2,7 @@
 title: 'From the Pleistocene to the Motor City: Revolutions in Human Ecology'
 year: 2011
 context: 'A keynote address given at the 18th International Conference of the Society for Human Ecology held in 2011'
+tags: text
 --- 
  
 ### Introduction

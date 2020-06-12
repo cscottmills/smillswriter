@@ -3,15 +3,39 @@ layout: page
 variant: list
 permalink: /preview-020200525/essays-talks
 title: Essays & Talks
+heading: Stephanie Mills Talks
 images:
-  - src: portrait-2014
+  - src: portrait-under-oak
     alt: Stephanie Mills
-  - src: fungi
-    alt: Fungi in Michigan's Upper Peninsula
 ---
 
+{% assign text = site.categories.essays-talks | where: "tags", "text" %}
+{% assign audio = site.categories.essays-talks | where: "tags", "audio" %}
+{% assign video = site.categories.essays-talks | where: "tags", "video" %}
+
+<h2>Video</h2>
 <ul>
-  {% for post in site.categories.essays-talks %}
+  {% for post in video %}
+    <li>
+      <h3><a href="{{ post.url }}">{{ post.title }} ({{ post.year }})</a></h3>
+      <p>{{ post.context }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>Audio</h2>
+<ul>
+  {% for post in audio %}
+    <li>
+      <h3><a href="{{ post.url }}">{{ post.title }} ({{ post.year }})</a></h3>
+      <p>{{ post.context }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>Text</h2>
+<ul>
+  {% for post in text %}
     <li>
       <h3><a href="{{ post.url }}">{{ post.title }} ({{ post.year }})</a></h3>
       <p>{{ post.context }}</p>

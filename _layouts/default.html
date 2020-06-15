@@ -18,8 +18,7 @@
       {% capture branch %}{{ page.url }}{% endcapture %}
       <h1 class="page-header--heading">{% if page.heading %}{{ page.heading }}{% else %}{{ site.title }}{% endif %}</h1>
       <nav class="page-header--nav">
-        {% comment %}{% assign navLinks = "Books, Essays & Talks, Links, Contact" | split: ', ' %}{% endcomment %}
-        {% assign navLinks = "Books, Links, Contact" | split: ', ' %}
+        {% assign navLinks = "Books, Essays & Talks, Links, Contact" | split: ', ' %}
         <a {% if branch == '/' %}class="active"{% endif %} href="/">Bio</a>
         {% for link in navLinks %}
           {% assign leaf = link | slugify %}
@@ -33,7 +32,11 @@
     <footer class="page-footer">
       <p>&copy; {{ site.time | date: '%Y' }} Stephanie Mills</p>
       <nav class="page-footer--nav">
-        <a {% if branch == '/' %}class="active"{% endif %} href="/">Bio</a>{% for link in navLinks %}<a {% if branch contains link %}class="active"{% endif %} href="/{{ link }}">{{ link | capitalize }}</a></li>{% endfor %}
+        <a {% if branch == '/' %}class="active"{% endif %} href="/">Bio</a>
+        {% for link in navLinks %}
+          {% assign leaf = link | slugify %}
+          <a {% if branch contains leaf %}class="active"{% endif %} href="/{{ leaf }}">{{ link | capitalize }}</a>
+        {% endfor %}
       </nav>
     </footer>
   </div>
